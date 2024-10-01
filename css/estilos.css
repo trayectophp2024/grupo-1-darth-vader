@@ -1,0 +1,39 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Goldman:wght@400;700&display=swap');
+
+/* NORMALIZAR NAVEGADOR */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
+}
+
+/* HEADER */
+.nav-link {
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fbb80a;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+}
+
+#copy {
+    font-family: "Goldman", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+h5 {
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fbb80a;
+}
