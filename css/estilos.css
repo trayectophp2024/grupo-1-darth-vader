@@ -10,6 +10,9 @@
 
 body {
     background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
 }
 
 /* HEADER */
@@ -18,6 +21,45 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     color: #fbb80a;
+}
+
+.nav-link:hover {
+    color: #fbb80a;
+}
+
+/* MAIN */
+.presentacion p {
+    font-family: "Goldman", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #fbb80a;
+}
+
+.yoda-home {
+    padding-top: 100px;
+}
+
+.peliculas-home {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/peliculas-home.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px;
+}
+
+.peliculas-home h2 {
+    font-family: "Bungee", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.peliculas-home .btn {
+    background-color: #fbb80a;
+    font-family: "Bungee", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #000000;
 }
 
 /* FOOTER */
