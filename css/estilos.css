@@ -10,7 +10,7 @@
 
 body {
     background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: repeat-y;
 }
@@ -28,39 +28,82 @@ body {
 }
 
 /* MAIN */
-.presentacion p {
-    font-family: "Goldman", sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    color: #fbb80a;
-}
 
-.yoda-home {
-    padding-top: 100px;
-}
+    /* PRESENTACIÓN */
+    #presentacion p {
+        font-family: "Goldman", sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        color: #fbb80a;
+    }
 
-.peliculas-home {
-    background-image: url("../bosquejos/ImagenesSW-propias/Home/peliculas-home.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 200px;
-}
+    #yoda-home {
+        padding-top: 100px;
+        width: 300px;
+    }
 
-.peliculas-home h2 {
-    font-family: "Bungee", sans-serif;
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+    /* SECCIONES */
+    .secciones-home {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 250px;
+    }
 
-.peliculas-home .btn {
-    background-color: #fbb80a;
-    font-family: "Bungee", sans-serif;
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #000000;
-}
+    .secciones-home h2 {
+        font-family: "Bungee", sans-serif;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .secciones-home .btn {
+        background-color: #fbb80a;
+        font-family: "Bungee", sans-serif;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #000000;
+    }
+
+    #peliculas-home {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/peliculas-home.jpeg");
+    }
+
+    #personajes-home {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/personajes-home.jpg");
+    }
+
+    #naves-home {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/naves-home.jpg");
+    }
+
+    /* GEORGE LUCAS/JOHN WILLIAMS */
+    #george-lucas img, #john-williams img {
+        width: 400px;
+        border: solid 10px #ffffff;
+        border-radius: 3px;
+    }
+
+    #george-lucas h3, #john-williams h3 {
+        margin: 30px 0;
+        font-family: "Bungee", sans-serif;
+        font-size: 20px;
+        color: #fbb80a;
+    }
+
+    #george-lucas p, #john-williams p {
+        margin-bottom: 20px;
+        font-family: "Goldman", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    /* TRAILERS */
+    #trailers iframe {
+        width: 500px;
+        height: 300px;
+        margin: 0;
+    }
 
 /* FOOTER */
 footer {
