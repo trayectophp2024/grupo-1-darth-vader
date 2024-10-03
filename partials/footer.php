@@ -1,10 +1,10 @@
     <!-- FOOTER -->
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid pt-2 px-3">
             <div class="row">
-                <div class="col-4 d-flex justify-content-center align-items-center my-3">
-                    <a href="index.php">
-                        <img width="200px" src="bosquejos/Logo/Logo SW alt.png" alt="Logo Star Wars">
+                <div class="col-4 d-flex justify-content-start align-items-center">
+                    <a class="ms-5" href="index.php">
+                        <img width="180px" src="bosquejos/Logo/Logo SW alt.png" alt="Logo Star Wars">
                     </a>
                 </div>
                 <div class="col-4 d-flex justify-content-center align-items-end">

@@ -1,10 +1,42 @@
+<?php
+
+    $secciones_validas = [
+        "inicio" => [
+            "titulo" => "Inicio"
+        ],
+        "peliculas" => [
+            "titulo" => "Películas"
+        ],
+        "personajes" => [
+            "titulo" => "Personajes"
+        ],
+        "naves" => [
+            "titulo" => "Naves"
+        ],
+        "sables" => [
+            "titulo" => "Sables"
+        ]
+    ];
+
+    $seccion = $_GET["sec"] ?? "inicio";
+
+    if(array_key_exists($seccion, $secciones_validas)){
+        $vista = $seccion;
+        $titulo = $secciones_validas[$seccion]["titulo"];
+    }else{
+        $vista = "404";
+        $titulo = "Erro 404 - Página no encontrada";
+    }
+
+?>
+
 <!doctype html>
 <html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Star Wars</title>
+    <title>Star Wars - <?= $titulo ?></title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="bosquejos/Logo/Logo FAVICON.png" type="image/x-icon">
     <!-- BOOTSTRAP -->
@@ -21,10 +53,10 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">
-                    <img width="300px" src="bosquejos/Logo/Logo SW alt.png" alt="Logo Star Wars">
+                <a class="navbar-brand mx-3" href="index.php">
+                    <img width="280px" src="bosquejos/Logo/Logo SW alt.png" alt="Logo Star Wars">
                 </a>
-                <form class="container-fluid">
+                <form class="container-fluid mx-5">
                     <div class="input-group">
                         <span class="input-group-text" id="basic-addon1">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -33,18 +65,18 @@
                     </div>
                 </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">películas</a>
+                            <a class="nav-link" href="index.php?sec=peliculas">películas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">personajes</a>
+                            <a class="nav-link" href="index.php?sec=personajes">personajes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">naves</a>
+                            <a class="nav-link" href="index.php?sec=naves">naves</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">sables</a>
+                            <a class="nav-link" href="index.php?sec=sables">sables</a>
                         </li>
                     </ul>
                 </div>

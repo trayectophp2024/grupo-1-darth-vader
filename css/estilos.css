@@ -39,7 +39,9 @@ body {
 
     #yoda-home {
         padding-top: 100px;
-        width: 300px;
+        width: 350px;
+        margin-bottom: -150px;
+        z-index: -1;
     }
 
     /* SECCIONES */
@@ -67,6 +69,7 @@ body {
 
     #peliculas-home {
         background-image: url("../bosquejos/ImagenesSW-propias/Home/peliculas-home.jpeg");
+        z-index: 1;
     }
 
     #personajes-home {
@@ -100,9 +103,10 @@ body {
 
     /* TRAILERS */
     #trailers iframe {
-        width: 500px;
-        height: 300px;
-        margin: 0;
+        width: 400px;
+        height: 250px;
+        margin: 0 10px;
+        padding: 0;
     }
 
 /* FOOTER */
