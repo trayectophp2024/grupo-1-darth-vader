@@ -1,33 +1,37 @@
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Goldman:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Goldman:wght@400;700&display=swap');
 
 /* NORMALIZAR NAVEGADOR */
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: repeat-y;
-}
+    body {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: repeat-y;
+    }
+
+    a {
+        text-decoration: none;
+    }
 
 /* HEADER */
-.nav-link {
-    font-family: "Bungee", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fbb80a;
-}
+    .nav-link {
+        font-family: "Bungee", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fbb80a;
+    }
 
-.nav-link:hover {
-    color: #fbb80a;
-}
+    .nav-link:hover {
+        color: #fbb80a;
+    }
 
-/* MAIN */
+/* HOME */
 
     /* PRESENTACIÓN */
     #presentacion p {
@@ -109,20 +113,88 @@ body {
         padding: 0;
     }
 
+/* PELÍCULAS */
+    #peliculas h1 {
+        font-family: "Bungee", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fbb80a;
+        margin: 10px;
+    }
+
+    #peliculas nav {
+        margin: 10px 10px 40px;
+    }
+
+    #peliculas nav ol {
+        margin: 0;
+    }
+    
+    #peliculas .breadcrumb-item {
+        font-family: "Goldman", sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fbb80a;
+    }
+    
+    #peliculas .active {
+        text-transform: capitalize;
+    }
+
+    .secciones-peliculas {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 40px 0;
+        border: solid 5px #ffffff;
+        border-radius: 3px;
+    }
+
+    #trilogia1 {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/1er-trilogia.jpg");
+    }
+
+    #trilogia2 {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/2da-trilogia.jpeg");
+    }
+
+    #trilogia3 {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/3ra-trilogia.jpeg");
+    }
+
+    #trilogia4 {
+        background-image: url("../bosquejos/ImagenesSW-propias/Home/4ta-peliculas.jpeg");
+    }
+
+    #peliculas h5 {
+        font-family: "Goldman", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #peliculas .btn {
+        background-color: #fbb80a;
+        font-family: "Bungee", sans-serif;
+        font-size: 18px;
+        color: #000000;
+    }
+
 /* FOOTER */
-footer {
-    background-color: #1a1a1a;
-}
+    footer {
+        background-color: #1a1a1a;
+    }
 
-#copy {
-    font-family: "Goldman", sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-}
+    #copy {
+        font-family: "Goldman", sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+    }
 
-h5 {
-    font-family: "Bungee", sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fbb80a;
-}
+    footer h5 {
+        font-family: "Bungee", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fbb80a;
+    }

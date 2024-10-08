@@ -1,35 +1,3 @@
-<?php
-
-    $secciones_validas = [
-        "inicio" => [
-            "titulo" => "Inicio"
-        ],
-        "peliculas" => [
-            "titulo" => "Películas"
-        ],
-        "personajes" => [
-            "titulo" => "Personajes"
-        ],
-        "naves" => [
-            "titulo" => "Naves"
-        ],
-        "sables" => [
-            "titulo" => "Sables"
-        ]
-    ];
-
-    $seccion = $_GET["sec"] ?? "inicio";
-
-    if(array_key_exists($seccion, $secciones_validas)){
-        $vista = $seccion;
-        $titulo = $secciones_validas[$seccion]["titulo"];
-    }else{
-        $vista = "404";
-        $titulo = "Erro 404 - Página no encontrada";
-    }
-
-?>
-
 <!doctype html>
 <html lang="es">
 
