@@ -6,8 +6,8 @@
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 
-    function info($conn, $seccion, $id){
-        $sqlInfo = "SELECT * FROM " . $seccion . " WHERE id = " . $id . ";";
+    function info($conn, $tabla, $id){
+        $sqlInfo = "SELECT * FROM " . $tabla . " WHERE id = " . $id . ";";
         $result = $conn->query($sqlInfo);
         return $result->fetch_all(MYSQLI_ASSOC);
     }

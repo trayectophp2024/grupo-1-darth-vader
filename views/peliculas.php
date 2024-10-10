@@ -4,7 +4,7 @@
     <div class="container-fluid my-4 p-5">
 
         <div class="d-flex flex-column">
-            <h1>películas</h1>
+            <h1><?= $titulo ?></h1>
 
             <nav class="d-flex justify-content-start align-items-center" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -19,10 +19,10 @@
             <div class="row d-flex justify-content-start align-items-center m-3">
                 <?php foreach ($peliculas as $pelicula) { ?>
                     <?php if ($pelicula["id"] <= 3) { ?>
-                        <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
+                        <div class="col-3 d-flex flex-column justify-content-center align-items-center px-5 py-3">
                             <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
-                            <a href="" class="btn">Ver más</a>
+                            <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
                     <?php } ?>
                 <?php } ?>
@@ -36,7 +36,7 @@
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
                             <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
-                            <a href="" class="btn">Ver más</a>
+                            <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
                     <?php } ?>
                 <?php } ?>
@@ -50,7 +50,7 @@
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
                             <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
-                            <a href="" class="btn">Ver más</a>
+                            <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
                     <?php } ?>
                 <?php } ?>
@@ -64,7 +64,7 @@
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
                             <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
-                            <a href="" class="btn">Ver más</a>
+                            <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
                     <?php } ?>
                 <?php } ?>

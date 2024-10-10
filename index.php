@@ -11,13 +11,25 @@
         "peliculas" => [
             "titulo" => "Películas"
         ],
+        "pelicula_individual" => [
+            "titulo" => "Películas"
+        ],
         "personajes" => [
+            "titulo" => "Personajes"
+        ],
+        "personaje_individual" => [
             "titulo" => "Personajes"
         ],
         "naves" => [
             "titulo" => "Naves"
         ],
+        "nave_individual" => [
+            "titulo" => "Naves"
+        ],
         "sables" => [
+            "titulo" => "Sables"
+        ],
+        "sable_individual" => [
             "titulo" => "Sables"
         ]
     ];
@@ -29,6 +41,9 @@
         $vista = "404";
         $titulo = "Error 404 - Página no encontrada";
     }
+
+    $tabla = $_GET["tab"] ?? FALSE;
+    $id = $_GET["id"] ?? FALSE;
 
 ?>
 
