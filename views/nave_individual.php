@@ -37,6 +37,18 @@ $nave = $naves[0] ?? NULL;
         <div class="row" style="margin-top: -30px;">
             <p><?= $nave["descripcion"] ?></p>
         </div>
+        <div class="d-flex justify-content-between align-items-center my-5">
+            <?php if($nave["id"] > 1){ ?>
+                <a href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] - 1 ?>"><span><< Nave anterior</span></a>
+            <?php }else{ ?>
+                <span></span>
+            <?php } ?>
+            <?php if($nave["id"] < 10){ ?>
+            <a href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] + 1 ?>"><span>Nave siguiente >></span></a>
+            <?php }else{ ?>
+                <span></span>
+            <?php } ?>
+        </div>
 
     </div>
 </main>

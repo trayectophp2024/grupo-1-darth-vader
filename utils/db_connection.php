@@ -1,6 +1,7 @@
 <?php
 
-    $host = "localhost";
+    // $host = "localhost";
+    $host = "127.0.0.1:3308";
     $user = "root";
     $password = "";
     $database = "star_wars";

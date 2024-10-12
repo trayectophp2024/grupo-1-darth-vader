@@ -31,6 +31,9 @@
         ],
         "sable_individual" => [
             "titulo" => "Sables"
+        ],
+        "creditos" => [
+            "titulo" => "Créditos"
         ]
     ];
 
@@ -39,7 +42,7 @@
         $titulo = $secciones[$seccion]["titulo"];
     }else{
         $vista = "404";
-        $titulo = "Error 404 - Página no encontrada";
+        $titulo = "Página no encontrada";
     }
 
     $tabla = $_GET["tab"] ?? FALSE;

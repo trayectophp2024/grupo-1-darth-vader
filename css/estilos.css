@@ -436,7 +436,9 @@
     }
 
     #nave-ind span {
-        margin-left: 16px;
+        font-family: "Goldman", sans-serif;
+        font-size: 20px;
+        margin: 0 16px;
         color: #ffffff;
     }
 

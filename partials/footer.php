@@ -11,7 +11,7 @@
                     <span id="copy">Copyright &copy; 2024</span>
                 </div>
                 <div class="col-2 my-3">
-                    <h5>créditos</h5>
+                    <a href="index.php?sec=creditos"><h5>créditos</h5></a>
                 </div>
                 <div class="col-2 my-3">
                     <h5>redes</h5>
