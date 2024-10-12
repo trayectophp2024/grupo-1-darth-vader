@@ -2,6 +2,7 @@
 
 $sables = info($conn, $tabla, $id);
 $sable = $sables[0] ?? NULL;
+$longitud_tabla = count(traer_todo($conn, $tabla));
 
 ?>
 
@@ -32,9 +33,24 @@ $sable = $sables[0] ?? NULL;
                 </div>
             </div>
         </div>
+
         <hr>
+
         <div class="row">
             <p><?= $sable["descripcion"] ?></p>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center my-5">
+            <?php if($sable["id"] > 1){ ?>
+                <a href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] - 1 ?>"><span><< Sable anterior</span></a>
+            <?php }else{ ?>
+                <span></span>
+            <?php } ?>
+            <?php if($sable["id"] < $longitud_tabla){ ?>
+            <a href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span>Sable siguiente >></span></a>
+            <?php }else{ ?>
+                <span></span>
+            <?php } ?>
         </div>
 
     </div>

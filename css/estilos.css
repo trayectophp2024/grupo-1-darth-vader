@@ -4,7 +4,7 @@
 
 /* NORMALIZAR NAVEGADOR */
     * {
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
@@ -230,7 +230,9 @@
     }
 
     #pelicula-ind span {
-        margin-left: 16px;
+        font-family: "Goldman", sans-serif;
+        font-size: 20px;
+        margin: 0 16px;
         color: #ffffff;
     }
 
@@ -333,7 +335,9 @@
     }
 
     #personaje-ind span {
-        margin-left: 16px;
+        font-family: "Goldman", sans-serif;
+        font-size: 20px;
+        margin: 0 16px;
         color: #ffffff;
     }
 
@@ -541,7 +545,9 @@
     }
 
     #sable-ind span {
-        margin-left: 16px;
+        font-family: "Goldman", sans-serif;
+        font-size: 20px;
+        margin: 0 16px;
         color: #ffffff;
     }
 

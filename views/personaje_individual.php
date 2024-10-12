@@ -2,6 +2,7 @@
 
 $personajes = info($conn, $tabla, $id);
 $personaje = $personajes[0] ?? NULL;
+$longitud_tabla = count(traer_todo($conn, $tabla));
 
 ?>
 
@@ -32,9 +33,24 @@ $personaje = $personajes[0] ?? NULL;
                     <p>Arma: <span><?= $personaje["arma"] ?></span></p>
                     <p>Actor: <span><?= $personaje["actor"] ?></span></p>
                 </div>
+
                 <hr>
+
                 <p><?= $personaje["descripcion"] ?></p>
             </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center my-5">
+            <?php if($personaje["id"] > 1){ ?>
+                <a href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] - 1 ?>"><span><< Personaje anterior</span></a>
+            <?php }else{ ?>
+                <span></span>
+            <?php } ?>
+            <?php if($personaje["id"] < $longitud_tabla){ ?>
+            <a href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] + 1 ?>"><span>Personaje siguiente >></span></a>
+            <?php }else{ ?>
+                <span></span>
+            <?php } ?>
         </div>
 
     </div>
