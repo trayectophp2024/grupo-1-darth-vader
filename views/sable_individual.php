@@ -2,7 +2,6 @@
 
 $sables = info($conn, $tabla, $id);
 $sable = $sables[0] ?? NULL;
-$longitud_tabla = count(traer_todo($conn, $tabla));
 
 ?>
 
@@ -46,7 +45,7 @@ $longitud_tabla = count(traer_todo($conn, $tabla));
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
-            <?php if($sable["id"] < $longitud_tabla){ ?>
+            <?php if($sable["id"] < count(traer_todo($conn, $tabla))){ ?>
             <a href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span>Sable siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>

@@ -18,6 +18,7 @@
 
     a {
         text-decoration: none;
+        color: rgb(255, 183, 0); /* fb b8 0a =>  */ /* 251 184 10 =>  */
     }
 
 
@@ -121,7 +122,7 @@
 
 
 /* PELÍCULAS */
-    #peliculas h1 {
+    h1 {
         font-family: "Bungee", sans-serif;
         font-size: 20px;
         text-transform: uppercase;
@@ -129,15 +130,11 @@
         margin: 10px;
     }
 
-    #peliculas nav {
-        margin: 10px 10px 40px;
-    }
-
-    #peliculas nav ol {
-        margin: 0;
+    .breadcrumb {
+        --bs-breadcrumb-divider-color: #fbb80a;
     }
     
-    #peliculas .breadcrumb-item {
+    .breadcrumb-item {
         font-family: "Goldman", sans-serif;
         font-size: 18px;
         text-transform: uppercase;
@@ -145,7 +142,7 @@
         color: #fbb80a;
     }
     
-    #peliculas .active {
+    .active {
         text-transform: capitalize;
     }
 
@@ -181,7 +178,7 @@
         color: #ffffff;
     }
 
-    #peliculas .btn {
+    .btn {
         background-color: #fbb80a;
         font-family: "Bungee", sans-serif;
         font-size: 18px;
@@ -190,54 +187,34 @@
 
 
     /* PELICULA-IND */
-    #pelicula-ind nav {
-        margin: 10px 10px 40px;
-    }
-
-    #pelicula-ind nav ol {
-        margin: 0;
-    }
-    
-    #pelicula-ind .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #pelicula-ind .active {
-        text-transform: capitalize;
-    }
-
     #pelicula-ind img {
         width: 300px;
         border: solid 5px #ffffff;
         border-radius: 3px;
     }
 
-    #pelicula-ind h2 {
+    h2 {
         margin-bottom: 40px;
         font-family: "Bungee", sans-serif;
         font-size: 20px;
         color: #fbb80a;
     }
     
-    #pelicula-ind p {
+    p {
         font-family: "Goldman", sans-serif;
         font-size: 20px;
         color: #fbb80a;
     }
 
-    #pelicula-ind span {
+    span {
         font-family: "Goldman", sans-serif;
         font-size: 20px;
         margin: 0 16px;
         color: #ffffff;
     }
 
-    #pelicula-ind hr {
-        margin: 60px 0;
+    hr {
+        margin: 40px 0;
         color: #ffffff;
         border-width: 3px;
         opacity: 1;
@@ -245,34 +222,6 @@
 
 
     /* PERSONAJES */
-    #personajes h1 {
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fbb80a;
-        margin: 10px;
-    }
-
-    #personajes nav {
-        margin: 10px 10px 40px;
-    }
-
-    #personajes nav ol {
-        margin: 0;
-    }
-    
-    #personajes .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #personajes .active {
-        text-transform: capitalize;
-    }
-
     #personajes img {
         width: 200px;
         height: 280px;
@@ -281,103 +230,21 @@
         background-color: #ffffff;
     }
 
-    #personajes h5 {
+    h5 {
         font-family: "Goldman", sans-serif;
         font-size: 20px;
         color: #fbb80a;
     }
 
-    #personajes .btn {
-        background-color: #fbb80a;
-        font-family: "Bungee", sans-serif;
-        font-size: 18px;
-        color: #000000;
-    }
-
 
     /* PERSONAJE-IND */
-    #personaje-ind nav {
-        margin: 10px 10px 40px;
-    }
-
-    #personaje-ind nav ol {
-        margin: 0;
-    }
-    
-    #personaje-ind .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #personaje-ind .active {
-        text-transform: capitalize;
-    }
-
     #personaje-ind img {
         width: 350px;
         height: 500px;
     }
 
-    #personaje-ind h2 {
-        margin-bottom: 30px;
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-    
-    #personaje-ind p {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-
-    #personaje-ind span {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        margin: 0 16px;
-        color: #ffffff;
-    }
-
-    #personaje-ind hr {
-        margin: 40px 0;
-        color: #ffffff;
-        border-width: 3px;
-        opacity: 1;
-    }
-
 
     /* NAVES */
-    #naves h1 {
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fbb80a;
-        margin: 10px;
-    }
-
-    #naves nav {
-        margin: 10px 10px 40px;
-    }
-
-    #naves nav ol {
-        margin: 0;
-    }
-    
-    #naves .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #naves .active {
-        text-transform: capitalize;
-    }
-
     #naves img {
         width: 320px;
         height: 220px;
@@ -385,104 +252,16 @@
         border-radius: 3px;
     }
 
-    #naves h5 {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-
-    #naves .btn {
-        background-color: #fbb80a;
-        font-family: "Bungee", sans-serif;
-        font-size: 18px;
-        color: #ffffff;
-    }
-
 
     /* NAVE-IND */
-    #nave-ind nav {
-        margin: 10px 10px 40px;
-    }
-
-    #nave-ind nav ol {
-        margin: 0;
-    }
-    
-    #nave-ind .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #nave-ind .active {
-        text-transform: capitalize;
-    }
-
     #nave-ind img {
         width: 580px;
         border: solid 5px #ffffff;
         border-radius: 3px;
     }
 
-    #nave-ind h2 {
-        margin-bottom: 30px;
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-    
-    #nave-ind p {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-
-    #nave-ind span {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        margin: 0 16px;
-        color: #ffffff;
-    }
-
-    #nave-ind hr {
-        margin: 40px 0;
-        color: #ffffff;
-        border-width: 3px;
-        opacity: 1;
-    }
-
 
     /* SABLES */
-    #sables h1 {
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fbb80a;
-        margin: 10px;
-    }
-
-    #sables nav {
-        margin: 10px 10px 40px;
-    }
-
-    #sables nav ol {
-        margin: 0;
-    }
-    
-    #sables .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #sables .active {
-        text-transform: capitalize;
-    }
-
     #sables img {
         width: 220px;
         height: 140px;
@@ -490,73 +269,12 @@
         border-radius: 3px;
     }
 
-    #sables h5 {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-
-    #sables .btn {
-        background-color: #fbb80a;
-        font-family: "Bungee", sans-serif;
-        font-size: 18px;
-        color: #ffffff;
-    }
-
 
     /* SABLE-IND */
-    #sable-ind nav {
-        margin: 10px 10px 40px;
-    }
-
-    #sable-ind nav ol {
-        margin: 0;
-    }
-    
-    #sable-ind .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    #sable-ind .active {
-        text-transform: capitalize;
-    }
-
     #sable-ind img {
         width: 400px;
         border: solid 5px #ffffff;
         border-radius: 3px;
-    }
-
-    #sable-ind h2 {
-        margin-bottom: 30px;
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-    
-    #sable-ind p {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-
-    #sable-ind span {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        margin: 0 16px;
-        color: #ffffff;
-    }
-
-    #sable-ind hr {
-        margin-top: -16px;
-        margin-bottom: 60px;
-        color: #ffffff;
-        border-width: 3px;
-        opacity: 1;
     }
 
 

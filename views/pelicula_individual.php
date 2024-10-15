@@ -2,7 +2,6 @@
 
 $peliculas = info($conn, $tabla, $id);
 $pelicula = $peliculas[0] ?? NULL;
-$longitud_tabla = count(traer_todo($conn, $tabla));
 
 ?>
 
@@ -45,7 +44,7 @@ $longitud_tabla = count(traer_todo($conn, $tabla));
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
-            <?php if($pelicula["id"] < $longitud_tabla){ ?>
+            <?php if($pelicula["id"] < count(traer_todo($conn, $tabla))){ ?>
             <a href="index.php?sec=pelicula_individual&tab=<?= $tabla ?>&id=<?= $pelicula["id"] + 1 ?>"><span>Película siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>

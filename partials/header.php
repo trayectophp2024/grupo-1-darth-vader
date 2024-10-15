@@ -26,7 +26,7 @@
                 </a>
                 <form class="container-fluid mx-5">
                     <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">
+                        <span class="input-group-text me-0" id="basic-addon1">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <input type="text" class="form-control">

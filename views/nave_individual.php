@@ -2,7 +2,6 @@
 
 $naves = info($conn, $tabla, $id);
 $nave = $naves[0] ?? NULL;
-$longitud_tabla = count(traer_todo($conn, $tabla));
 
 ?>
 
@@ -46,7 +45,7 @@ $longitud_tabla = count(traer_todo($conn, $tabla));
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
-            <?php if($nave["id"] < $longitud_tabla){ ?>
+            <?php if($nave["id"] < count(traer_todo($conn, $tabla))){ ?>
             <a href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] + 1 ?>"><span>Nave siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>

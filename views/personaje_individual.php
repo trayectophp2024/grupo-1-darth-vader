@@ -2,7 +2,6 @@
 
 $personajes = info($conn, $tabla, $id);
 $personaje = $personajes[0] ?? NULL;
-$longitud_tabla = count(traer_todo($conn, $tabla));
 
 ?>
 
@@ -46,7 +45,7 @@ $longitud_tabla = count(traer_todo($conn, $tabla));
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
-            <?php if($personaje["id"] < $longitud_tabla){ ?>
+            <?php if($personaje["id"] < count(traer_todo($conn, $tabla))){ ?>
             <a href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] + 1 ?>"><span>Personaje siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>
