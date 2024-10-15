@@ -6,7 +6,7 @@
         <div class="d-flex flex-column">
             <h1><?= $titulo ?></h1>
 
-            <nav class="d-flex justify-content-start align-items-center" aria-label="breadcrumb">
+            <nav class="d-flex justify-content-start align-items-center m-2" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php?sec=inicio">inicio</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>

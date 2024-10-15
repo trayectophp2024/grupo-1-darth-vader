@@ -34,6 +34,9 @@
         ],
         "creditos" => [
             "titulo" => "Créditos"
+        ],
+        "busqueda" => [
+            "titulo" => "Inicio"
         ]
     ];
 

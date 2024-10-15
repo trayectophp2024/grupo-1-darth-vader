@@ -41,12 +41,12 @@ $personaje = $personajes[0] ?? NULL;
 
         <div class="d-flex justify-content-between align-items-center my-5">
             <?php if($personaje["id"] > 1){ ?>
-                <a href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Personaje anterior</span></a>
+                <a class="prev" href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Personaje anterior</span></a>
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
             <?php if($personaje["id"] < count(traer_todo($conn, $tabla))){ ?>
-            <a href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] + 1 ?>"><span>Personaje siguiente <i class="fa-solid fa-angles-right"></i></span></a>
+                <a class="next" href="index.php?sec=personaje_individual&tab=<?= $tabla ?>&id=<?= $personaje["id"] + 1 ?>"><span>Personaje siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>
             <?php } ?>

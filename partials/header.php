@@ -24,12 +24,12 @@
                 <a class="navbar-brand mx-3" href="index.php">
                     <img width="280px" src="bosquejos/Logo/Logo SW alt.png" alt="Logo Star Wars">
                 </a>
-                <form class="container-fluid mx-5">
+                <form class="container-fluid mx-5" action="index.php" method="GET" role="search">
                     <div class="input-group">
-                        <span class="input-group-text me-0" id="basic-addon1">
+                        <button class="btn" type="submit" id="buscar">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <input type="text" class="form-control">
+                        </button>
+                        <input class="form-control" type="search" aria-label="Search" name="q">
                     </div>
                 </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

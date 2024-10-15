@@ -41,12 +41,12 @@ $sable = $sables[0] ?? NULL;
 
         <div class="d-flex justify-content-between align-items-center my-5">
             <?php if($sable["id"] > 1){ ?>
-                <a href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Sable anterior</span></a>
+                <a class="prev" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Sable anterior</span></a>
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
             <?php if($sable["id"] < count(traer_todo($conn, $tabla))){ ?>
-            <a href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span>Sable siguiente <i class="fa-solid fa-angles-right"></i></span></a>
+                <a class="next" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span>Sable siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>
             <?php } ?>

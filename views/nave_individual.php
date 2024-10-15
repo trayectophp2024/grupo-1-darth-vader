@@ -41,12 +41,12 @@ $nave = $naves[0] ?? NULL;
 
         <div class="d-flex justify-content-between align-items-center my-5">
             <?php if($nave["id"] > 1){ ?>
-                <a href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Nave anterior</span></a>
+                <a class="prev" href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Nave anterior</span></a>
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
             <?php if($nave["id"] < count(traer_todo($conn, $tabla))){ ?>
-            <a href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] + 1 ?>"><span>Nave siguiente <i class="fa-solid fa-angles-right"></i></span></a>
+                <a class="next" href="index.php?sec=nave_individual&tab=<?= $tabla ?>&id=<?= $nave["id"] + 1 ?>"><span>Nave siguiente <i class="fa-solid fa-angles-right"></i></span></a>
             <?php }else{ ?>
                 <span></span>
             <?php } ?>
