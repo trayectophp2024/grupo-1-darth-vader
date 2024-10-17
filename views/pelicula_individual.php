@@ -18,7 +18,7 @@ $pelicula = $peliculas[0] ?? NULL;
 
         <div class="row py-5">
             <div class="col-4 d-flex justify-content-center">
-                <img src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Poster de la película <?= $pelicula["titulo"] ?>">
+                <img class="pelicula-ind-img" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Poster de la película <?= $pelicula["titulo"] ?>">
             </div>
             <div class="col-8">
                 <h2><?= $pelicula["titulo"] ?></h2>

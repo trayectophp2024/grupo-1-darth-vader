@@ -18,7 +18,7 @@ $personaje = $personajes[0] ?? NULL;
 
         <div class="row py-5">
             <div class="col-4 d-flex justify-content-center align-items-center">
-                <img src="bosquejos/ImagenesSW-propias/Personajes/<?= $personaje["imagen"] ?>" alt="<?= $personaje["nombre"] ?>">
+                <img class="personaje-ind-img" src="bosquejos/ImagenesSW-propias/Personajes/<?= $personaje["imagen"] ?>" alt="<?= $personaje["nombre"] ?>">
             </div>
             <div class="col-8">
                 <h2><?= $personaje["nombre"] ?></h2>

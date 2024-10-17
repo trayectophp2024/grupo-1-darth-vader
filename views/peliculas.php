@@ -20,7 +20,7 @@
                 <?php foreach ($peliculas as $pelicula) { ?>
                     <?php if ($pelicula["id"] <= 3) { ?>
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
-                            <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
+                            <img class="peliculas-img" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
                             <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
@@ -34,7 +34,7 @@
                 <?php foreach ($peliculas as $pelicula) { ?>
                     <?php if ($pelicula["id"] > 3 && $pelicula["id"] <= 6) { ?>
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
-                            <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
+                            <img class="peliculas-img" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
                             <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
@@ -48,7 +48,7 @@
                 <?php foreach ($peliculas as $pelicula) { ?>
                     <?php if ($pelicula["id"] > 6 && $pelicula["id"] <= 9) { ?>
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
-                            <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
+                            <img class="peliculas-img" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
                             <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>
@@ -62,7 +62,7 @@
                 <?php foreach ($peliculas as $pelicula) { ?>
                     <?php if ($pelicula["id"] > 9) { ?>
                         <div class="col-4 d-flex flex-column justify-content-center align-items-center px-5 py-3">
-                            <img width="200px" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
+                            <img class="peliculas-img" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $pelicula["imagen"] ?>" alt="Póster de la película <?= $pelicula["titulo"] ?>">
                             <h5 class="my-2"><?= $pelicula["titulo"] ?></h5>
                             <a href="index.php?sec=pelicula_individual&tab=<?= $seccion ?>&id=<?= $pelicula["id"] ?>" class="btn">Ver más</a>
                         </div>

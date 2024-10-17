@@ -17,7 +17,7 @@
         <div class="row d-flex justify-content-start align-items-center m-3">
             <?php foreach ($sables as $sable) { ?>
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center mb-4 px-5 py-3">
-                    <img src="bosquejos/ImagenesSW-propias/Sables/<?= $sable["imagen"] ?>" alt="<?= $sable["nombre"] ?>">
+                    <img class="sables-img" src="bosquejos/ImagenesSW-propias/Sables/<?= $sable["imagen"] ?>" alt="<?= $sable["nombre"] ?>">
                     <h5 class="my-3"><?= $sable["nombre"] ?></h5>
                     <a href="index.php?sec=sable_individual&tab=<?= $seccion ?>&id=<?= $sable["id"] ?>" class="btn">Ver más</a>
                 </div>

@@ -18,7 +18,7 @@ $nave = $naves[0] ?? NULL;
 
         <div class="row py-5">
             <div class="col-6 d-flex justify-content-center align-items-center" style="margin-top: -40px;">
-                <img src="bosquejos/ImagenesSW-propias/Naves/<?= $nave["imagen"] ?>" alt="<?= $nave["nombre"] ?>">
+                <img class="nave-ind-img" src="bosquejos/ImagenesSW-propias/Naves/<?= $nave["imagen"] ?>" alt="<?= $nave["nombre"] ?>">
             </div>
             <div class="col-6">
                 <h2><?= $nave["nombre"] ?></h2>

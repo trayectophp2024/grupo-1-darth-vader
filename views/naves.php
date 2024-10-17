@@ -17,7 +17,7 @@
         <div class="row d-flex justify-content-start align-items-center m-3">
             <?php foreach ($naves as $nave) { ?>
                 <div class="col-4 d-flex flex-column justify-content-center align-items-center mb-4 px-5 py-3">
-                    <img src="bosquejos/ImagenesSW-propias/Naves/<?= $nave["imagen"] ?>" alt="<?= $nave["nombre"] ?>">
+                    <img class="naves-img" src="bosquejos/ImagenesSW-propias/Naves/<?= $nave["imagen"] ?>" alt="<?= $nave["nombre"] ?>">
                     <h5 class="my-3"><?= $nave["nombre"] ?></h5>
                     <a href="index.php?sec=nave_individual&tab=<?= $seccion ?>&id=<?= $nave["id"] ?>" class="btn">Ver más</a>
                 </div>

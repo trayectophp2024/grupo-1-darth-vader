@@ -17,7 +17,7 @@
         <div class="row d-flex justify-content-start align-items-center m-3">
             <?php foreach ($personajes as $personaje) { ?>
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center mb-4 px-5 py-3">
-                    <img src="bosquejos/ImagenesSW-propias/Personajes/<?= $personaje["imagen"] ?>" alt="<?= $personaje["nombre"] ?>">
+                    <img class="personajes-img" src="bosquejos/ImagenesSW-propias/Personajes/<?= $personaje["imagen"] ?>" alt="<?= $personaje["nombre"] ?>">
                     <h5 class="my-3"><?= $personaje["nombre"] ?></h5>
                     <a href="index.php?sec=personaje_individual&tab=<?= $seccion ?>&id=<?= $personaje["id"] ?>" class="btn">Ver más</a>
                 </div>

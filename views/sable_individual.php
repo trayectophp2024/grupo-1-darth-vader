@@ -18,7 +18,7 @@ $sable = $sables[0] ?? NULL;
 
         <div class="row py-5">
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <img src="bosquejos/ImagenesSW-propias/Sables/<?= $sable["imagen"] ?>" alt="<?= $sable["nombre"] ?>">
+                <img class="sable-ind-img" src="bosquejos/ImagenesSW-propias/Sables/<?= $sable["imagen"] ?>" alt="<?= $sable["nombre"] ?>">
             </div>
             <div class="col-6">
                 <h2><?= $sable["nombre"] ?></h2>
