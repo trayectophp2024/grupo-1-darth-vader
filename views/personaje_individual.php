@@ -1,5 +1,6 @@
 <?php
 
+require "partials/header.php";
 $personajes = info($conn, $tabla, $id);
 $personaje = $personajes[0] ?? NULL;
 
@@ -54,3 +55,5 @@ $personaje = $personajes[0] ?? NULL;
 
     </div>
 </main>
+
+<?php require "partials/footer.php"; ?>

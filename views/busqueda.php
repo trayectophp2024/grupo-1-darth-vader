@@ -1,3 +1,5 @@
+<?php require "partials/header.php"; ?>
+
 <main id="busqueda">
     <div class="container-fluid my-4 p-5">
 
@@ -34,8 +36,10 @@
                 <?php } ?>
             </div>
         <?php } else { ?>
-            <p class="text-center text-danger fs-3" style='font-family: "Goldman", sans-serif;'>No se encontraron resultados para la búsqueda: <b><?= $termino_busqueda ?></b></p>
+            <p class="text-center text-break fs-3" style='font-family: "Goldman", sans-serif;'>No se encontraron resultados para la búsqueda: <b><?= $termino_busqueda ?></b></p>
         <?php } ?>
 
     </div>
 </main>
+
+<?php require "partials/footer.php"; ?>

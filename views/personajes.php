@@ -1,4 +1,9 @@
-<?php $personajes = traer_todo($conn, $seccion); ?>
+<?php 
+
+require "partials/header.php";
+$personajes = traer_todo($conn, $seccion); 
+
+?>
 
 <main id="personajes">
     <div class="container-fluid my-4 p-5">
@@ -26,3 +31,5 @@
 
     </div>
 </main>
+
+<?php require "partials/footer.php"; ?>

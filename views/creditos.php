@@ -1,3 +1,5 @@
+<?php require "partials/header.php"; ?>
+
 <main id="creditos">
     <div class="container-fluid my-4 p-5">
 
@@ -30,3 +32,5 @@
 
     </div>
 </main>
+
+<?php require "partials/footer.php"; ?>

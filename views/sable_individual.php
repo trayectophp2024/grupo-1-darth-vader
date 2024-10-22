@@ -1,5 +1,6 @@
 <?php
 
+require "partials/header.php";
 $sables = info($conn, $tabla, $id);
 $sable = $sables[0] ?? NULL;
 
@@ -54,3 +55,5 @@ $sable = $sables[0] ?? NULL;
 
     </div>
 </main>
+
+<?php require "partials/footer.php"; ?>

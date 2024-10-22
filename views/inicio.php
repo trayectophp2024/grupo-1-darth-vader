@@ -1,3 +1,5 @@
+<?php require "partials/header.php" ?>
+
 <main id="home">
     <section id="presentacion" class="container-fluid mt-5 mb-3">
         <div class="row">
@@ -83,3 +85,5 @@
         </div>
     </section>
 </main>
+
+<?php require "partials/footer.php"; ?>

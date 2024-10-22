@@ -1,368 +1,419 @@
 /* FUENTES */
-    @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Goldman:wght@400;700&display=swap');
 
 
 /* NORMALIZAR NAVEGADOR */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
-        background-size: 100%;
-        background-position: center;
-        background-repeat: repeat-y;
-    }
+body {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/Fondo-estrellas.webp");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+}
 
-    a {
-        text-decoration: none;
-        color: rgb(255, 183, 0);
-        transition: .2s;
-    }
+a {
+    text-decoration: none;
+    color: rgb(255, 183, 0);
+    transition: .2s;
+}
 
 
 /* HEADER */
-    .navbar {
-        --bs-navbar-color: #fbb80a;
-    }
+.navbar {
+    --bs-navbar-color: #fbb80a;
+}
 
-    .nav-link {
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fbb80a;
-    }
+.nav-link {
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fbb80a;
+}
 
-    .nav-link:hover, a:hover {
-        color: #ffdd1b;
-    }
+.nav-link:hover,
+a:hover {
+    color: #ffdd1b;
+}
 
 
 /* HOME */
 
-    /* PRESENTACIÓN */
-    #presentacion p {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        font-style: italic;
-        color: #fbb80a;
-    }
+/* PRESENTACIÓN */
+#presentacion p {
+    font-family: "Goldman", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #fbb80a;
+}
 
-    #yoda-home {
-        padding-top: 100px;
-        width: 350px;
-        margin-bottom: -150px;
-        z-index: -1;
-    }
-
-
-    /* SECCIONES */
-    .secciones-home {
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 250px;
-    }
-
-    .secciones-home h2 {
-        margin-bottom: 10px;
-        font-family: "Bungee", sans-serif;
-        font-size: 28px;
-        text-transform: uppercase;
-        color: #ffffff;
-    }
-
-    .secciones-home .btn {
-        background-color: #fbb80a;
-        font-family: "Bungee", sans-serif;
-        font-size: 18px;
-        text-transform: capitalize;
-        color: #000000;
-    }
-
-    #peliculas-home {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/peliculas-home.jpeg");
-        z-index: 1;
-    }
-
-    #personajes-home {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/personajes-home.jpg");
-    }
-
-    #naves-home {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/naves-home.jpg");
-    }
+#yoda-home {
+    padding-top: 100px;
+    width: 350px;
+    margin-bottom: -150px;
+    z-index: -1;
+}
 
 
-    /* GEORGE LUCAS/JOHN WILLIAMS */
-    #george-lucas img, #john-williams img {
-        width: 400px;
-        border: solid 10px #ffffff;
-        border-radius: 3px;
-    }
+/* SECCIONES */
+.secciones-home {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 250px;
+}
 
-    #george-lucas h3, #john-williams h3 {
-        margin: 30px 0;
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
+.secciones-home h2 {
+    margin-bottom: 10px;
+    font-family: "Bungee", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 
-    #george-lucas p, #john-williams p {
-        margin-bottom: 20px;
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        color: #ffffff;
-    }
+.secciones-home .btn {
+    background-color: #fbb80a;
+    font-family: "Bungee", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+#peliculas-home {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/peliculas-home.jpeg");
+    z-index: 1;
+}
+
+#personajes-home {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/personajes-home.jpg");
+}
+
+#naves-home {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/naves-home.jpg");
+}
 
 
-    /* TRAILERS */
-    #trailers iframe {
-        width: 400px;
-        height: 250px;
-        margin: 0 10px;
-        padding: 0;
-    }
+/* GEORGE LUCAS/JOHN WILLIAMS */
+#george-lucas img,
+#john-williams img {
+    width: 400px;
+    border: solid 10px #ffffff;
+    border-radius: 3px;
+}
+
+#george-lucas h3,
+#john-williams h3 {
+    margin: 30px 0;
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    color: #fbb80a;
+}
+
+#george-lucas p,
+#john-williams p {
+    margin-bottom: 20px;
+    font-family: "Goldman", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+/* TRAILERS */
+#trailers iframe {
+    width: 400px;
+    height: 250px;
+    margin: 0 10px;
+    padding: 0;
+}
 
 
 /* PELÍCULAS */
-    h1 {
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fbb80a;
-        margin: 10px;
-    }
+h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fbb80a;
+    margin: 10px;
+}
 
-    .breadcrumb {
-        --bs-breadcrumb-divider-color: #fbb80a;
-        --bs-breadcrumb-item-active-color: #fbb80a;
-    }
-    
-    .breadcrumb-item {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fbb80a;
-    }
-    
-    .active {
-        text-transform: capitalize;
-    }
+.breadcrumb {
+    --bs-breadcrumb-divider-color: #fbb80a;
+    --bs-breadcrumb-item-active-color: #fbb80a;
+}
 
-    .secciones-peliculas {
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: 40px 0;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-    }
+.breadcrumb-item {
+    font-family: "Goldman", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fbb80a;
+}
 
-    #trilogia1 {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/1er-trilogia.jpg");
-    }
+.active {
+    text-transform: capitalize;
+}
 
-    #trilogia2 {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/2da-trilogia.jpeg");
-    }
+.secciones-peliculas {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 40px 0;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+}
 
-    #trilogia3 {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/3ra-trilogia.jpeg");
-    }
+#trilogia1 {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/1er-trilogia.jpg");
+}
 
-    #trilogia4 {
-        background-image: url("../bosquejos/ImagenesSW-propias/Home/4ta-peliculas.jpeg");
-    }
+#trilogia2 {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/2da-trilogia.jpeg");
+}
 
-    .peliculas-img {
-        width: 200px;
-    }
+#trilogia3 {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/3ra-trilogia.jpeg");
+}
 
-    #peliculas h5 {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        text-align: center;
-        color: #ffffff;
-    }
+#trilogia4 {
+    background-image: url("../bosquejos/ImagenesSW-propias/Home/4ta-peliculas.jpeg");
+}
 
-    .btn {
-        background-color: #fbb80a;
-        font-family: "Bungee", sans-serif;
-        font-size: 18px;
-        color: #000000;
-        transition: .2s;
-        --bs-btn-active-color: #000000;
-        --bs-btn-active-bg: #fbb80a;
-        --bs-btn-active-border-color: #fbb80a;
-    }
+.peliculas-img {
+    width: 200px;
+}
 
-    .btn:hover {
-        background-color: #fbb80a;
-        color: #000000;
-        transform: scale(105%);
-        transition: .2s;
-    }
+#peliculas h5 {
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
 
-    #buscar {
-        background-color: #ffffff;
-    }
+.btn {
+    background-color: #fbb80a;
+    font-family: "Bungee", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    transition: .2s;
+    --bs-btn-active-color: #000000;
+    --bs-btn-active-bg: #fbb80a;
+    --bs-btn-active-border-color: #fbb80a;
+}
 
-    #buscar:hover {
-        transform: none;
-    }
+.btn:hover {
+    background-color: rgba(26, 26, 26, 75%);
+    color: #fbb80a;
+    border-color: #fbb80a;
+    transition: .2s;
+}
 
+#buscar {
+    background-color: #ffffff;
+}
 
-    /* PELICULA-IND */
-    .pelicula-ind-img {
-        width: 300px;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-    }
-
-    h2 {
-        margin-bottom: 40px;
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-    
-    p {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
-
-    span {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        margin: 0 16px;
-        color: #ffffff;
-    }
-
-    hr {
-        margin: 40px 0;
-        color: #ffffff;
-        border-width: 3px;
-        opacity: 1;
-    }
-
-    .prev, .next {
-        transition: .2s;
-    }
-
-    .prev:hover, .next:hover {
-        transform: scale(110%);
-        transition: .2s;
-    }
+#buscar:hover {
+    transform: none;
+}
 
 
-    /* PERSONAJES */
-    .personajes-img {
-        width: 200px;
-        height: 280px;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-        background-color: #ffffff;
-    }
+/* PELICULA-IND */
+.pelicula-ind-img {
+    width: 300px;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+}
 
-    h5 {
-        font-family: "Goldman", sans-serif;
-        font-size: 20px;
-        color: #fbb80a;
-    }
+h2 {
+    margin-bottom: 40px;
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    color: #fbb80a;
+}
 
+p {
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    color: #fbb80a;
+}
 
-    /* PERSONAJE-IND */
-    .personaje-ind-img {
-        width: 350px;
-        height: 500px;
-    }
+span {
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    margin: 0 16px;
+    color: #ffffff;
+}
 
+hr {
+    margin: 40px 0;
+    color: #ffffff;
+    border-width: 3px;
+    opacity: 1;
+}
 
-    /* NAVES */
-    .naves-img {
-        width: 320px;
-        height: 220px;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-    }
+.prev,
+.next {
+    transition: .2s;
+}
 
-
-    /* NAVE-IND */
-    .nave-ind-img {
-        width: 580px;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-    }
-
-
-    /* SABLES */
-    .sables-img {
-        width: 220px;
-        height: 140px;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-    }
+.prev:hover,
+.next:hover {
+    transform: scale(110%);
+    transition: .2s;
+}
 
 
-    /* SABLE-IND */
-    .sable-ind-img {
-        width: 400px;
-        border: solid 5px #ffffff;
-        border-radius: 3px;
-    }
+/* PERSONAJES */
+.personajes-img {
+    width: 200px;
+    height: 280px;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+h5 {
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    color: #fbb80a;
+}
+
+
+/* PERSONAJE-IND */
+.personaje-ind-img {
+    width: 350px;
+    height: 500px;
+}
+
+
+/* NAVES */
+.naves-img {
+    width: 320px;
+    height: 220px;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+}
+
+
+/* NAVE-IND */
+.nave-ind-img {
+    width: 580px;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+}
+
+
+/* SABLES */
+.sables-img {
+    width: 220px;
+    height: 140px;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+}
+
+
+/* SABLE-IND */
+.sable-ind-img {
+    width: 400px;
+    border: solid 5px #ffffff;
+    border-radius: 3px;
+}
 
 
 /* FOOTER */
-    footer {
-        background-color: #1a1a1a;
-    }
+footer {
+    background-color: #1a1a1a;
+}
 
-    #copy {
-        font-family: "Goldman", sans-serif;
-        font-size: 18px;
-        color: #ffffff;
-    }
+#copy {
+    font-family: "Goldman", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
 
-    footer h5 {
-        font-family: "Bungee", sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fbb80a;
-    }
+footer h5 {
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fbb80a;
+}
 
-    /* CRÉDITOS */
-    #creditos img {
-        margin-left: 300px;
-        width: 600px;
-        border: solid 6px #ffffff;
-        border-radius: 3px;
-    }
+/* CRÉDITOS */
+#creditos img {
+    margin-left: 300px;
+    width: 600px;
+    border: solid 6px #ffffff;
+    border-radius: 3px;
+}
 
-    #creditos h2 {
-        font-family: "Bungee", sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 28px;
-        color: #fbb80a;
-    }
+#creditos h2 {
+    font-family: "Bungee", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    color: #fbb80a;
+}
 
-    #creditos h3 {
-        margin-bottom: 0;
-        font-family: "Goldman", sans-serif;
-        text-transform: capitalize;
-        text-align: center;
-        font-size: 20px;
-        color: #ffffff;    
-    }
+#creditos h3 {
+    margin-bottom: 0;
+    font-family: "Goldman", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
 
-    #creditos span {
-        font-family: "Goldman", sans-serif;
-        text-align: center;
-        font-size: 18px;
-        color: #fbb80a;
-    }
+#creditos span {
+    font-family: "Goldman", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #fbb80a;
+}
+
+/* 404 */
+#error404 {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 75%);
+}
+
+#error404 div div div:first-child {
+    padding: 60px 80px;
+}
+
+#error404 h1 {
+    margin-bottom: 20px;
+    font-family: "Bungee", sans-serif;
+    font-size: 28px;
+    color: #fbb80a;
+}
+
+#error404 p {
+    margin-bottom: 16px;
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#error404 .btn {
+    padding: 8px 14px;
+    font-family: "Goldman", sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(26, 26, 26, 75%);
+    color: #fbb80a;
+    border-color: #fbb80a;
+    transition: .2s;
+}
+
+#error404 .btn:hover {
+    background-color: #fbb80a;
+    color: #000000;
+    transition: .2s;
+}
+
+#error404 img {
+    margin-top: 84px;
+    width: 400px;
+}

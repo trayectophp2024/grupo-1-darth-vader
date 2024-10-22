@@ -63,14 +63,10 @@ if ($termino_busqueda) {
 
 <?php
 
-require "partials/header.php";
-
 if($termino_busqueda){
     require "views/busqueda.php";
 }else{
     require "views/$vista.php";
 }
-
-require "partials/footer.php";
 
 ?>
