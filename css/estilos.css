@@ -126,7 +126,7 @@ a:hover {
 #trailers iframe {
     width: 400px;
     height: 250px;
-    margin: 0 10px;
+    margin: 0 20px;
     padding: 0;
 }
 
@@ -341,6 +341,11 @@ footer h5 {
     color: #fbb80a;
 }
 
+#redes img {
+    width: 36px;
+    margin-right: 12px;
+}
+
 /* CRÉDITOS */
 #creditos img {
     margin-left: 300px;
@@ -414,6 +419,7 @@ footer h5 {
 }
 
 #error404 img {
-    margin-top: 84px;
+    margin-top: 143px;
+    margin-bottom: 30px;
     width: 400px;
 }

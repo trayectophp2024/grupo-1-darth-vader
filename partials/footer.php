@@ -1,9 +1,9 @@
     <!-- FOOTER -->
     <footer>
-        <div class="container-fluid pt-2 px-3">
+        <div class="container-fluid pt-2 px-3 py-2">
             <div class="row">
                 <div class="col-4 d-flex justify-content-start align-items-center">
-                    <a class="ms-5" href="index.php">
+                    <a class="ms-5 my-1" href="index.php">
                         <img width="180px" src="bosquejos/Logo/Logo SW alt.png" alt="Logo Star Wars">
                     </a>
                 </div>
@@ -14,7 +14,15 @@
                     <a href="index.php?sec=creditos"><h5>créditos</h5></a>
                 </div>
                 <div class="col-2 my-3">
-                    <h5>redes</h5>
+                    <h5 class="mb-2">redes</h5>
+                    <div id="redes" class="d-flex justify-content-start align-items-center">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="bosquejos/ImagenesSW-propias/Home/instagram_logo.png" alt="Logo Instagram">
+                        </a>
+                        <a href="https://x.com/" target="_blank">
+                            <img src="bosquejos/ImagenesSW-propias/Home/x_logo.png" alt="Logo X">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

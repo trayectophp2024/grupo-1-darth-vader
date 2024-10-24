@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 d-flex flex-column justify-content-start align-items-start">
-                    <h1>404 Página no encontrada</h1>
+                    <h1>Página no encontrada</h1>
                     <p>Estos no son los androides que estás buscando...</p>
                     <a href="index.php">
                         <button type="button" class="btn">Volver a inicio</button>

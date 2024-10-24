@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="div d-flex flex-column justify-content-center align-items-center">
-                    <h3>tester</h3>
+                    <h3>testers</h3>
                     <span>Guillermo Rodríguez</span>
                 </div>
             </div>

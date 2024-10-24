@@ -36,7 +36,10 @@
                 <?php } ?>
             </div>
         <?php } else { ?>
-            <p class="text-center text-break fs-3" style='font-family: "Goldman", sans-serif;'>No se encontraron resultados para la búsqueda: <b><?= $termino_busqueda ?></b></p>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="text-center text-break fs-3 mb-5" style='font-family: "Goldman", sans-serif;'>No se encontraron resultados para la búsqueda: <b><?= $termino_busqueda ?></b></p>
+                <img width="800px" src="bosquejos/ImagenesSW-propias/Home/busqueda_no_encontrada.jpg" alt="Búsqueda no encontrada">
+            </div>
         <?php } ?>
 
     </div>
