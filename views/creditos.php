@@ -26,6 +26,7 @@
                 <div class="div d-flex flex-column justify-content-center align-items-center">
                     <h3>testers</h3>
                     <span>Guillermo Rodríguez</span>
+                    <span>Agustín</span>
                 </div>
             </div>
         </div>
