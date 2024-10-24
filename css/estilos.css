@@ -347,6 +347,10 @@ footer h5 {
 }
 
 /* CRÉDITOS */
+#creditos {
+    padding: 50px 0;
+}
+
 #creditos img {
     margin-left: 300px;
     width: 600px;
