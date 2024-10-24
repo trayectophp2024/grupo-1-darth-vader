@@ -24,9 +24,36 @@ a {
 
 
 /* HEADER */
+.form-control {
+    background-color: rgba(26, 26, 26, 75%);
+    border-color: #fbb80a;
+    font-family: "Goldman", sans-serif;
+    transition: .15s;
+ }
+
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 85%);
+    border-color: #fbb80a;
+    color: #ffffff;
+    box-shadow: none;
+    transition: .15s;
+}
+
+#buscar {
+    background-color: #fbb80a;
+    color: #1a1a1a;
+    border-color: #fbb80a;
+}
+
+#buscar:hover {
+    background-color: rgba(26, 26, 26, 75%);
+    color: #fbb80a;
+    border-color: #fbb80a;
+}
+
 .navbar {
     --bs-navbar-color: #fbb80a;
-    --bs-navbar-hover-color: #ffb80a;
+    --bs-navbar-hover-color: #fbb80a;
 }
 
 .nav-link {
@@ -210,10 +237,6 @@ h1 {
     color: #fbb80a;
     border-color: #fbb80a;
     transition: .2s;
-}
-
-#buscar {
-    background-color: #ffffff;
 }
 
 #buscar:hover {
@@ -411,15 +434,15 @@ footer h5 {
     padding: 8px 14px;
     font-family: "Goldman", sans-serif;
     text-transform: uppercase;
-    background-color: rgba(26, 26, 26, 75%);
-    color: #fbb80a;
+    background-color: #fbb80a;
+    color: #000000;
     border-color: #fbb80a;
     transition: .2s;
 }
 
 #error404 .btn:hover {
-    background-color: #fbb80a;
-    color: #000000;
+    background-color: rgba(26, 26, 26, 75%);
+    color: #fbb80a;
     transition: .2s;
 }
 
