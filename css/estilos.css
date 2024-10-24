@@ -26,6 +26,7 @@ a {
 /* HEADER */
 .navbar {
     --bs-navbar-color: #fbb80a;
+    --bs-navbar-hover-color: #ffb80a;
 }
 
 .nav-link {
