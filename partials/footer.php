@@ -17,10 +17,13 @@
                     <h5 class="mb-2">redes</h5>
                     <div id="redes" class="d-flex justify-content-start align-items-center">
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img src="bosquejos/ImagenesSW-propias/Home/instagram_logo.png" alt="Logo Instagram">
+                            <img width="36px" style="margin-right: 12px;" src="bosquejos/ImagenesSW-propias/Home/instagram_logo.png" alt="Logo Instagram">
                         </a>
                         <a href="https://x.com/" target="_blank">
-                            <img src="bosquejos/ImagenesSW-propias/Home/x_logo.png" alt="Logo X">
+                            <img width="36px" style="margin-right: 12px;" src="bosquejos/ImagenesSW-propias/Home/x_logo.png" alt="Logo X">
+                        </a>
+                        <a href="https://www.disneyplus.com/" target="_blank">
+                            <img width="64px" src="bosquejos/ImagenesSW-propias/Home/disney-plus-logo-1.png" alt="Logo Disney+">
                         </a>
                     </div>
                 </div>

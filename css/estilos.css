@@ -29,7 +29,7 @@ a {
     border-color: #fbb80a;
     font-family: "Goldman", sans-serif;
     transition: .15s;
- }
+}
 
 .form-control:focus {
     background-color: rgba(0, 0, 0, 85%);
@@ -363,11 +363,6 @@ footer h5 {
     font-size: 20px;
     text-transform: uppercase;
     color: #fbb80a;
-}
-
-#redes img {
-    width: 36px;
-    margin-right: 12px;
 }
 
 /* CRÉDITOS */
