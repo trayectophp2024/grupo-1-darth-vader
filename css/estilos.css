@@ -279,12 +279,14 @@ hr {
 }
 
 .prev,
-.next {
+.next,
+.up {
     transition: .2s;
 }
 
 .prev:hover,
-.next:hover {
+.next:hover,
+.up:hover {
     transform: scale(110%);
     transition: .2s;
 }
@@ -442,7 +444,7 @@ footer h5 {
 }
 
 #error404 img {
-    margin-top: 143px;
+    margin-top: 160px;
     margin-bottom: 30px;
     width: 400px;
 }

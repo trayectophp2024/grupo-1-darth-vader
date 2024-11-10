@@ -25,11 +25,11 @@ $sable = $sables[0] ?? NULL;
                 <h2><?= $sable["nombre"] ?></h2>
 
                 <div class="row">
-                    <p>Nombre: <span><?= $sable["nombre"] ?></span></p>
+                    <p>Nombre: <span><?= $sable["nombre"] ?? "N/A" ?></span></p>
                     <p>Color: <span><?= $sable["color"] ?></span></p>
-                    <p>Propietario: <span><?= $sable["propietario"] ?></span></p>
-                    <p>Afiliación: <span><?= $sable["afiliacion"] ?></span></p>
-                    <p>Cristal: <span><?= $sable["cristal"] ?></span></p>
+                    <p>Propietario: <span><?= $sable["propietario"] ?? "N/A" ?></span></p>
+                    <p>Afiliación: <span><?= $sable["afiliacion"] ?? "N/A" ?></span></p>
+                    <p>Cristal: <span><?= $sable["cristal"] ?? "N/A" ?></span></p>
                 </div>
             </div>
         </div>

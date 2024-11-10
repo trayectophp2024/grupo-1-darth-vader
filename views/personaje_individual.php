@@ -25,13 +25,13 @@ $personaje = $personajes[0] ?? NULL;
                 <h2><?= $personaje["nombre"] ?></h2>
 
                 <div class="row">
-                    <p>Nombre: <span><?= $personaje["nombre"] ?></span></p>
-                    <p>Especie: <span><?= $personaje["especie"] ?></span></p>
-                    <p>Afiliación: <span><?= $personaje["afiliacion"] ?></span></p>
-                    <p>Planeta natal: <span><?= $personaje["planeta_natal"] ?></span></p>
-                    <p>Habilidades: <span><?= $personaje["habilidades"] ?></span></p>
-                    <p>Arma: <span><?= $personaje["arma"] ?></span></p>
-                    <p>Actor: <span><?= $personaje["actor"] ?></span></p>
+                    <p>Nombre: <span><?= $personaje["nombre"] ?? "N/A" ?></span></p>
+                    <p>Especie: <span><?= $personaje["especie"] ?? "N/A" ?></span></p>
+                    <p>Afiliación: <span><?= $personaje["afiliacion"] ?? "N/A" ?></span></p>
+                    <p>Planeta natal: <span><?= $personaje["planeta_natal"] ?? "N/A" ?></span></p>
+                    <p>Habilidades: <span><?= $personaje["habilidades"] ?? "N/A" ?></span></p>
+                    <p>Arma: <span><?= $personaje["arma"] ?? "N/A" ?></span></p>
+                    <p>Actor: <span><?= $personaje["actor"] ?? "N/A" ?></span></p>
                 </div>
 
                 <hr>

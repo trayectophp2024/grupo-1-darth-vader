@@ -26,12 +26,12 @@ $pelicula = $peliculas[0] ?? NULL;
 
                 <div class="row">
                     <div class="col-6 my-0">
-                        <p>Estreno: <span><?= $pelicula["estreno"] ?></span></p>
-                        <p>Dirección: <span><?= $pelicula["director"] ?></span></p>
+                        <p>Estreno: <span><?= $pelicula["estreno"] ?? "N/A" ?></span></p>
+                        <p>Dirección: <span><?= $pelicula["director"] ?? "N/A" ?></span></p>
                     </div>
                     <div class="col-6">
-                        <p>Duración: <span><?= $pelicula["duracion"] ?> min.</span></p>
-                        <p>Era: <span></span></p>
+                        <p>Duración: <span><?= $pelicula["duracion"] ?? "N/A" ?> min.</span></p>
+                        <p>Era: <span><?= $pelicula["era"] ?? "N/A" ?></span></p>
                     </div>
                 </div>
                 <hr>

@@ -25,12 +25,12 @@ $nave = $naves[0] ?? NULL;
                 <h2><?= $nave["nombre"] ?></h2>
 
                 <div class="row">
-                    <p>Tipo: <span><?= $nave["tipo"] ?></span></p>
-                    <p>Fabricante: <span><?= $nave["fabricante"] ?></span></p>
-                    <p>Longitud: <span><?= $nave["longitud"] ?> mts.</span></p>
-                    <p>Vel. máxima: <span><?= $nave["velocidad_maxima"] ?> km/h</span></p>
-                    <p>Armamento: <span><?= $nave["armamento"] ?></span></p>
-                    <p>Capacidad: <span><?= $nave["capacidad"] ?></span></p>
+                    <p>Tipo: <span><?= $nave["tipo"] ?? "N/A" ?></span></p>
+                    <p>Fabricante: <span><?= $nave["fabricante"] ?? "N/A" ?></span></p>
+                    <p>Longitud: <span><?= $nave["longitud"] ?? "N/A" ?> mts.</span></p>
+                    <p>Vel. máxima: <span><?= $nave["velocidad_maxima"] ?? "N/A" ?> km/h</span></p>
+                    <p>Armamento: <span><?= $nave["armamento"] ?? "N/A" ?></span></p>
+                    <p>Capacidad: <span><?= $nave["capacidad"] ?? "N/A" ?></span></p>
                 </div>
                 <hr>
             </div>

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-4 d-flex flex-column justify-content-between mb-5 px-5">
                 <img width="120px" class="m-4" src="bosquejos/ImagenesSW-propias/Home/deathstar-home.png" alt="Estrella de la Muerte">
-                <img width="150px" class="mt-5 me-4 align-self-end" src="bosquejos/ImagenesSW-propias/Home/xwing-home.png" alt="X-Wing">
+                <img width="300px" class="mt-5 me-4 align-self-end" src="bosquejos/ImagenesSW-propias/Home/xwing-home.png" alt="X-Wing">
             </div>
             <div class="col-4 mb-5 d-flex justify-content-center align-items-center">
                 <p class="text-center">"Dedicado a todo aquel que recorriendo el camino de la Fuerza se encuentre."</p>
@@ -81,11 +81,18 @@
                     <h3>John Williams, músico y compositor.</h3>
                     <p>En una carrera de más de seis décadas, John Williams se ha convertido en uno de los compositores más exitosos de música para películas y conciertos de Estados Unidos. Ha sido director musical y compositor de más de cien filmes, incluidas las nueve películas de Star Wars, las tres primeras películas de Harry Potter, Superman, Mi pobre Angelito, entre otras.</p>
                     <p>En 2005, su obra en la banda sonora de Star Wars fue seleccionada por el American Film Institute como la obra musical más grande del cine estadounidense.</p>
-                    <p>Con 52 nominaciones a los premios Oscar, Williams es la persona con vida con más nominaciones de la Academia y la segunda con más nominaciones de la historia, después de Walt Disney.</p>
+                    <p>Con 54 nominaciones a los premios Oscar, Williams es la persona con vida con más nominaciones de la Academia y la segunda con más nominaciones de la historia, después de Walt Disney.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="d-flex justify-content-end align-items-center mb-5 me-5">
+        <a class="up" href="#">
+            <span>Ir Arriba <i class="fa-solid fa-angles-up"></i></span>
+        </a>
+    </div>
+
 </main>
 
 <?php require "partials/footer.php"; ?>

@@ -3,14 +3,14 @@
 <main id="busqueda" class="pb-4">
     <div class="container-fluid my-4 p-5">
 
-        <?php if ($termino_busqueda && !empty($resultados)) { ?>
+        <?php if (!empty($resultados)) { ?>
             <h1 class="text-center text-uppercase fs-3 mb-5">Resultados de la búsqueda</h1>
 
             <div class="row d-flex justify-content-start align-items-center">
                 <?php foreach ($resultados as $resultado) { ?>
                     <?php if ($resultado["tabla"] == "peliculas") { ?>
                         <div class="col-3 d-flex flex-column justify-content-center align-items-center px-3 py-3">
-                            <img class="peliculas-img" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $resultado["imagen"] ?>" alt="Póster de la película <?= $resultado["titulo"] ?>">
+                            <img class="peliculas-img" style="border: solid 5px #ffffff; border-radius: 3px;" src="bosquejos/ImagenesSW-propias/Peliculas/<?= $resultado["imagen"] ?>" alt="Póster de la película <?= $resultado["titulo"] ?>">
                             <h5 class="text-center my-3"><?= $resultado["titulo"] ?></h5>
                             <a href="index.php?sec=pelicula_individual&tab=<?= $resultado["tabla"] ?>&id=<?= $resultado["id"] ?>" class="btn">Ver más</a>
                         </div>
@@ -43,6 +43,15 @@
         <?php } ?>
 
     </div>
+
+    <?php if(count($resultados) > 12){ ?>
+        <div class="d-flex justify-content-end align-items-center mb-5 me-5">
+            <a class="up" href="#">
+                <span>Ir Arriba <i class="fa-solid fa-angles-up"></i></span>
+            </a>
+        </div>
+    <?php } ?>
+
 </main>
 
 <?php require "partials/footer.php"; ?>

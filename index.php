@@ -53,11 +53,9 @@ $id = $_GET["id"] ?? FALSE;
 
 $termino_busqueda = $_GET["q"] ?? "";
 $resultados = [];
-
-if ($termino_busqueda) {
+if ($termino_busqueda && $termino_busqueda !== " "){
     $resultados = buscar($conn, $termino_busqueda);
 }
-
 
 ?>
 

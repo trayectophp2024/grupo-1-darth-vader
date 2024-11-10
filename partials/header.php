@@ -29,7 +29,7 @@
                         <button class="btn" type="submit" id="buscar">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                        <input class="form-control" type="search" aria-label="Search" name="q">
+                        <input class="form-control" type="search" aria-label="Search" name="q" maxlength="100">
                     </div>
                 </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
