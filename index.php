@@ -51,7 +51,8 @@ if (array_key_exists($seccion, $secciones)) {
 $tabla = $_GET["tab"] ?? FALSE;
 $id = $_GET["id"] ?? FALSE;
 
-$termino_busqueda = $_GET["q"] ?? "";
+$q = $_GET["q"] ?? "";
+$termino_busqueda = strtolower($q);
 $resultados = [];
 if ($termino_busqueda && $termino_busqueda !== " "){
     $resultados = buscar($conn, $termino_busqueda);

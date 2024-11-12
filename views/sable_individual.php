@@ -40,15 +40,19 @@ $sable = $sables[0] ?? NULL;
             <p><?= $sable["descripcion"] ?></p>
         </div>
 
+        <div class="row d-flex flex-column justify-content-center align-items-center my-5">
+            <img class="sable-ind-img2" src="bosquejos/ImagenesSW-propias/Sables/<?= $sable["imagen2"] ?>" alt="<?= $sable["nombre"] ?> desplegado">
+        </div>
+
         <div class="d-flex justify-content-between align-items-center my-5">
-            <?php if($sable["id"] > 1){ ?>
+            <?php if ($sable["id"] > 1) { ?>
                 <a class="prev" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Sable anterior</span></a>
-            <?php }else{ ?>
+            <?php } else { ?>
                 <span></span>
             <?php } ?>
-            <?php if($sable["id"] < count(traer_todo($conn, $tabla))){ ?>
+            <?php if ($sable["id"] < count(traer_todo($conn, $tabla))) { ?>
                 <a class="next" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span>Sable siguiente <i class="fa-solid fa-angles-right"></i></span></a>
-            <?php }else{ ?>
+            <?php } else { ?>
                 <span></span>
             <?php } ?>
         </div>
