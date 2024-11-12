@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-4 d-flex flex-column justify-content-between mb-5 px-5">
                 <img width="120px" class="m-4" src="bosquejos/ImagenesSW-propias/Home/deathstar-home.png" alt="Estrella de la Muerte">
-                <img width="300px" class="mt-5 me-4 align-self-end" src="bosquejos/ImagenesSW-propias/Home/xwing-home.png" alt="X-Wing">
+                <img width="280px" class="mt-5 me-4 align-self-end" src="bosquejos/ImagenesSW-propias/Home/xwing-home.png" alt="X-Wing">
             </div>
             <div class="col-4 mb-5 d-flex justify-content-center align-items-center">
                 <p class="text-center">"Dedicado a todo aquel que recorriendo el camino de la Fuerza se encuentre."</p>

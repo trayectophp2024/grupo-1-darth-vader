@@ -14,23 +14,27 @@
 
     function buscar($conn, $termino_busqueda){
         $termino_busqueda = $conn->real_escape_string($termino_busqueda);
+        $queryPeliculas = "SELECT 'peliculas' AS tabla, id, titulo, episodio, era, descripcion, director, estreno, duracion, imagen FROM peliculas";
+        $queryPersonajes = "SELECT 'personajes' AS tabla, id, nombre, descripcion, especie, afiliacion, planeta_natal, habilidades, arma, actor, imagen FROM personajes";
+        $queryNaves = "SELECT 'naves' AS tabla, id, nombre, descripcion, tipo, fabricante, longitud, velocidad_maxima, armamento, capacidad, imagen FROM naves";
+        $querySables = "SELECT 'sables' AS tabla, id, nombre, descripcion, color, propietario, afiliacion, cristal, imagen, imagen2 FROM sables";
         if($termino_busqueda == "pelicula" || $termino_busqueda == "peliculas"){
-            $sqlPeliculas = "SELECT 'peliculas' AS tabla, id, titulo, episodio, era, descripcion, director, estreno, duracion, imagen FROM peliculas";
+            $sqlPeliculas = $queryPeliculas;
             $resultado = $conn->query($sqlPeliculas)->fetch_all(MYSQLI_ASSOC);
         }elseif($termino_busqueda == "personaje" || $termino_busqueda == "personajes"){
-            $sqlPersonajes = "SELECT 'personajes' AS tabla, id, nombre, descripcion, especie, afiliacion, planeta_natal, habilidades, arma, actor, imagen FROM personajes";
+            $sqlPersonajes = $queryPersonajes;
             $resultado = $conn->query($sqlPersonajes)->fetch_all(MYSQLI_ASSOC);
         }elseif($termino_busqueda == "nave" || $termino_busqueda == "naves"){
-            $sqlNaves = "SELECT 'naves' AS tabla, id, nombre, descripcion, tipo, fabricante, longitud, velocidad_maxima, armamento, capacidad, imagen FROM naves";
+            $sqlNaves = $queryNaves;
             $resultado = $conn->query($sqlNaves)->fetch_all(MYSQLI_ASSOC);
         }elseif($termino_busqueda == "sable" || $termino_busqueda == "sables"){
-            $sqlSables = "SELECT 'sables' AS tabla, id, nombre, descripcion, color, propietario, afiliacion, cristal, imagen, imagen2 FROM sables";
+            $sqlSables = $querySables;
             $resultado = $conn->query($sqlSables)->fetch_all(MYSQLI_ASSOC);
         }else{
-            $sqlPeliculas = "SELECT 'peliculas' AS tabla, id, titulo, episodio, era, descripcion, director, estreno, duracion, imagen FROM peliculas WHERE LOWER(titulo) LIKE '%$termino_busqueda%'";
-            $sqlPersonajes = "SELECT 'personajes' AS tabla, id, nombre, descripcion, especie, afiliacion, planeta_natal, habilidades, arma, actor, imagen FROM personajes WHERE LOWER(nombre) LIKE '%$termino_busqueda%'";
-            $sqlNaves = "SELECT 'naves' AS tabla, id, nombre, descripcion, tipo, fabricante, longitud, velocidad_maxima, armamento, capacidad, imagen FROM naves WHERE LOWER(nombre) LIKE '%$termino_busqueda%'";
-            $sqlSables = "SELECT 'sables' AS tabla, id, nombre, descripcion, color, propietario, afiliacion, cristal, imagen, imagen2 FROM sables WHERE LOWER(nombre) LIKE '%$termino_busqueda%'";
+            $sqlPeliculas = $queryPeliculas . " WHERE LOWER(titulo) LIKE '%$termino_busqueda%'";
+            $sqlPersonajes = $queryPersonajes . " WHERE LOWER(nombre) LIKE '%$termino_busqueda%'";
+            $sqlNaves = $queryNaves . " WHERE LOWER(nombre) LIKE '%$termino_busqueda%'";
+            $sqlSables = $querySables . " WHERE LOWER(nombre) LIKE '%$termino_busqueda%'";
             $resultPeliculas = $conn->query($sqlPeliculas)->fetch_all(MYSQLI_ASSOC);
             $resultPersonajes = $conn->query($sqlPersonajes)->fetch_all(MYSQLI_ASSOC);
             $resultNaves = $conn->query($sqlNaves)->fetch_all(MYSQLI_ASSOC);

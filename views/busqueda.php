@@ -22,7 +22,7 @@
                         </div>
                     <?php } elseif ($resultado["tabla"] == "naves") { ?>
                         <div class="col-3 d-flex flex-column justify-content-center align-items-center mb-4 px-5 py-3">
-                            <img class="naves-img" src="bosquejos/ImagenesSW-propias/Naves/<?= $resultado["imagen"] ?>" alt="<?= $resultado["nombre"] ?>">
+                            <img class="naves-busqueda" src="bosquejos/ImagenesSW-propias/Naves/<?= $resultado["imagen"] ?>" alt="<?= $resultado["nombre"] ?>">
                             <h5 class="my-3"><?= $resultado["nombre"] ?></h5>
                             <a href="index.php?sec=nave_individual&tab=<?= $resultado["tabla"] ?>&id=<?= $resultado["id"] ?>" class="btn">Ver más</a>
                         </div>

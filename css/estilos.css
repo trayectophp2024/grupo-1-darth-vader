@@ -212,6 +212,7 @@ h1 {
 
 .peliculas-img {
     width: 200px;
+    height: 300px;
 }
 
 #peliculas h5 {
@@ -247,6 +248,7 @@ h1 {
 /* PELICULA-IND */
 .pelicula-ind-img {
     width: 300px;
+    height: 450px;
     border: solid 5px #ffffff;
     border-radius: 3px;
 }
@@ -323,10 +325,18 @@ h5 {
     border-radius: 3px;
 }
 
+.naves-busqueda {
+    width: 240px;
+    height: 165px;
+    border: solid 5px #ffffff;
+    border-radius: 3px; 
+}
+
 
 /* NAVE-IND */
 .nave-ind-img {
     width: 580px;
+    height: 400px;
     border: solid 5px #ffffff;
     border-radius: 3px;
 }
@@ -344,6 +354,7 @@ h5 {
 /* SABLE-IND */
 .sable-ind-img {
     width: 400px;
+    height: 250px;
     border: solid 5px #ffffff;
     border-radius: 3px;
 }
