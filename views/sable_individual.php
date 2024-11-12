@@ -4,6 +4,11 @@ require "partials/header.php";
 $sables = info($conn, $tabla, $id);
 $sable = $sables[0] ?? NULL;
 
+$sablesPrev = info($conn, $tabla, $id - 1);
+$sablesNext = info($conn, $tabla, $id + 1);
+$sablePrev = $sablesPrev[0] ?? NULL;
+$sableNext = $sablesNext[0] ?? NULL;
+
 ?>
 
 <main id="sable-ind">
@@ -46,12 +51,12 @@ $sable = $sables[0] ?? NULL;
 
         <div class="d-flex justify-content-between align-items-center my-5">
             <?php if ($sable["id"] > 1) { ?>
-                <a class="prev" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> Sable anterior</span></a>
+                <a class="prev" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] - 1 ?>"><span><i class="fa-solid fa-angles-left"></i> <?= $sablePrev["nombre"] ?></span></a>
             <?php } else { ?>
                 <span></span>
             <?php } ?>
             <?php if ($sable["id"] < count(traer_todo($conn, $tabla))) { ?>
-                <a class="next" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span>Sable siguiente <i class="fa-solid fa-angles-right"></i></span></a>
+                <a class="next" href="index.php?sec=sable_individual&tab=<?= $tabla ?>&id=<?= $sable["id"] + 1 ?>"><span><?= $sableNext["nombre"] ?> <i class="fa-solid fa-angles-right"></i></span></a>
             <?php } else { ?>
                 <span></span>
             <?php } ?>
